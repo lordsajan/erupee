@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CEC6894D-D69F-4649-823B-D9AF1A4C1823}</ProjectGuid>
+    <Keyword>MakeFileProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <NMakeOutput>Erupees.exe</NMakeOutput>
+    <NMakePreprocessorDefinitions>WIN32;_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <NMakeOutput>Erupees.exe</NMakeOutput>
+    <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\addrman.cpp" />
+    <ClCompile Include="..\..\src\bitcoinrpc.cpp" />
+    <ClCompile Include="..\..\src\checkpoints.cpp" />
+    <ClCompile Include="..\..\src\crypter.cpp" />
+    <ClCompile Include="..\..\src\db.cpp" />
+    <ClCompile Include="..\..\src\init.cpp" />
+    <ClCompile Include="..\..\src\irc.cpp" />
+    <ClCompile Include="..\..\src\json\json_spirit_reader.cpp" />
+    <ClCompile Include="..\..\src\json\json_spirit_value.cpp" />
+    <ClCompile Include="..\..\src\json\json_spirit_writer.cpp" />
+    <ClCompile Include="..\..\src\kernel.cpp" />
+    <ClCompile Include="..\..\src\key.cpp" />
+    <ClCompile Include="..\..\src\keystore.cpp" />
+    <ClCompile Include="..\..\src\main.cpp" />
+    <ClCompile Include="..\..\src\net.cpp" />
+    <ClCompile Include="..\..\src\netbase.cpp" />
+    <ClCompile Include="..\..\src\noui.cpp" />
+    <ClCompile Include="..\..\src\protocol.cpp" />
+    <ClCompile Include="..\..\src\qt\aboutdialog.cpp" />
+    <ClCompile Include="..\..\src\qt\addressbookpage.cpp" />
+    <ClCompile Include="..\..\src\qt\addresstablemodel.cpp" />
+    <ClCompile Include="..\..\src\qt\askpassphrasedialog.cpp" />
+    <ClCompile Include="..\..\src\qt\bitcoin.cpp" />
+    <ClCompile Include="..\..\src\qt\bitcoinaddressvalidator.cpp" />
+    <ClCompile Include="..\..\src\qt\bitcoinamountfield.cpp" />
+    <ClCompile Include="..\..\src\qt\bitcoingui.cpp" />
+    <ClCompile Include="..\..\src\qt\bitcoinstrings.cpp" />
+    <ClCompile Include="..\..\src\qt\bitcoinunits.cpp" />
+    <ClCompile Include="..\..\src\qt\clientmodel.cpp" />
+    <ClCompile Include="..\..\src\qt\csvmodelwriter.cpp" />
+    <ClCompile Include="..\..\src\qt\editaddressdialog.cpp" />
+    <ClCompile Include="..\..\src\qt\guiutil.cpp" />
+    <ClCompile Include="..\..\src\qt\messagepage.cpp" />
+    <ClCompile Include="..\..\src\qt\monitoreddatamapper.cpp" />
+    <ClCompile Include="..\..\src\qt\notificator.cpp" />
+    <ClCompile Include="..\..\src\qt\optionsdialog.cpp" />
+    <ClCompile Include="..\..\src\qt\optionsmodel.cpp" />
+    <ClCompile Include="..\..\src\qt\overviewpage.cpp" />
+    <ClCompile Include="..\..\src\qt\qrcodedialog.cpp" />
+    <ClCompile Include="..\..\src\qt\qtipcserver.cpp" />
+    <ClCompile Include="..\..\src\qt\qvalidatedlineedit.cpp" />
+    <ClCompile Include="..\..\src\qt\qvaluecombobox.cpp" />
+    <ClCompile Include="..\..\src\qt\rpcconsole.cpp" />
+    <ClCompile Include="..\..\src\qt\sendcoinsdialog.cpp" />
+    <ClCompile Include="..\..\src\qt\sendcoinsentry.cpp" />
+    <ClCompile Include="..\..\src\qt\test\test_main.cpp" />
+    <ClCompile Include="..\..\src\qt\test\uritests.cpp" />
+    <ClCompile Include="..\..\src\qt\transactiondesc.cpp" />
+    <ClCompile Include="..\..\src\qt\transactiondescdialog.cpp" />
+    <ClCompile Include="..\..\src\qt\transactionfilterproxy.cpp" />
+    <ClCompile Include="..\..\src\qt\transactionrecord.cpp" />
+    <ClCompile Include="..\..\src\qt\transactiontablemodel.cpp" />
+    <ClCompile Include="..\..\src\qt\transactionview.cpp" />
+    <ClCompile Include="..\..\src\qt\walletmodel.cpp" />
+    <ClCompile Include="..\..\src\rpcdump.cpp" />
+    <ClCompile Include="..\..\src\script.cpp" />
+    <ClCompile Include="..\..\src\test\base58_tests.cpp" />
+    <ClCompile Include="..\..\src\test\base64_tests.cpp" />
+    <ClCompile Include="..\..\src\test\Checkpoints_tests.cpp" />
+    <ClCompile Include="..\..\src\test\DoS_tests.cpp" />
+    <ClCompile Include="..\..\src\test\getarg_tests.cpp" />
+    <ClCompile Include="..\..\src\test\key_tests.cpp" />
+    <ClCompile Include="..\..\src\test\miner_tests.cpp" />
+    <ClCompile Include="..\..\src\test\mruset_tests.cpp" />
+    <ClCompile Include="..\..\src\test\multisig_tests.cpp" />
+    <ClCompile Include="..\..\src\test\rpc_tests.cpp" />
+    <ClCompile Include="..\..\src\test\script_P2SH_tests.cpp" />
+    <ClCompile Include="..\..\src\test\script_tests.cpp" />
+    <ClCompile Include="..\..\src\test\sigopcount_tests.cpp" />
+    <ClCompile Include="..\..\src\test\test_bitcoin.cpp" />
+    <ClCompile Include="..\..\src\test\transaction_tests.cpp" />
+    <ClCompile Include="..\..\src\test\uint160_tests.cpp" />
+    <ClCompile Include="..\..\src\test\uint256_tests.cpp" />
+    <ClCompile Include="..\..\src\test\util_tests.cpp" />
+    <ClCompile Include="..\..\src\util.cpp" />
+    <ClCompile Include="..\..\src\version.cpp" />
+    <ClCompile Include="..\..\src\wallet.cpp" />
+    <ClCompile Include="..\..\src\walletdb.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\addrman.h" />
+    <ClInclude Include="..\..\src\allocators.h" />
+    <ClInclude Include="..\..\src\base58.h" />
+    <ClInclude Include="..\..\src\bignum.h" />
+    <ClInclude Include="..\..\src\bitcoinrpc.h" />
+    <ClInclude Include="..\..\src\checkpoints.h" />
+    <ClInclude Include="..\..\src\compat.h" />
+    <ClInclude Include="..\..\src\crypter.h" />
+    <ClInclude Include="..\..\src\db.h" />
+    <ClInclude Include="..\..\src\init.h" />
+    <ClInclude Include="..\..\src\irc.h" />
+    <ClInclude Include="..\..\src\json\json_spirit.h" />
+    <ClInclude Include="..\..\src\json\json_spirit_error_position.h" />
+    <ClInclude Include="..\..\src\json\json_spirit_reader.h" />
+    <ClInclude Include="..\..\src\json\json_spirit_reader_template.h" />
+    <ClInclude Include="..\..\src\json\json_spirit_stream_reader.h" />
+    <ClInclude Include="..\..\src\json\json_spirit_utils.h" />
+    <ClInclude Include="..\..\src\json\json_spirit_value.h" />
+    <ClInclude Include="..\..\src\json\json_spirit_writer.h" />
+    <ClInclude Include="..\..\src\json\json_spirit_writer_template.h" />
+    <ClInclude Include="..\..\src\kernel.h" />
+    <ClInclude Include="..\..\src\key.h" />
+    <ClInclude Include="..\..\src\keystore.h" />
+    <ClInclude Include="..\..\src\main.h" />
+    <ClInclude Include="..\..\src\mruset.h" />
+    <ClInclude Include="..\..\src\net.h" />
+    <ClInclude Include="..\..\src\netbase.h" />
+    <ClInclude Include="..\..\src\obj\build.h" />
+    <ClInclude Include="..\..\src\protocol.h" />
+    <ClInclude Include="..\..\src\qt\aboutdialog.h" />
+    <ClInclude Include="..\..\src\qt\addressbookpage.h" />
+    <ClInclude Include="..\..\src\qt\addresstablemodel.h" />
+    <ClInclude Include="..\..\src\qt\askpassphrasedialog.h" />
+    <ClInclude Include="..\..\src\qt\bitcoinaddressvalidator.h" />
+    <ClInclude Include="..\..\src\qt\bitcoinamountfield.h" />
+    <ClInclude Include="..\..\src\qt\bitcoingui.h" />
+    <ClInclude Include="..\..\src\qt\bitcoinunits.h" />
+    <ClInclude Include="..\..\src\qt\clientmodel.h" />
+    <ClInclude Include="..\..\src\qt\csvmodelwriter.h" />
+    <ClInclude Include="..\..\src\qt\editaddressdialog.h" />
+    <ClInclude Include="..\..\src\qt\guiconstants.h" />
+    <ClInclude Include="..\..\src\qt\guiutil.h" />
+    <ClInclude Include="..\..\src\qt\macdockiconhandler.h" />
+    <ClInclude Include="..\..\src\qt\messagepage.h" />
+    <ClInclude Include="..\..\src\qt\monitoreddatamapper.h" />
+    <ClInclude Include="..\..\src\qt\notificator.h" />
+    <ClInclude Include="..\..\src\qt\optionsdialog.h" />
+    <ClInclude Include="..\..\src\qt\optionsmodel.h" />
+    <ClInclude Include="..\..\src\qt\overviewpage.h" />
+    <ClInclude Include="..\..\src\qt\qrcodedialog.h" />
+    <ClInclude Include="..\..\src\qt\qtipcserver.h" />
+    <ClInclude Include="..\..\src\qt\qvalidatedlineedit.h" />
+    <ClInclude Include="..\..\src\qt\qvaluecombobox.h" />
+    <ClInclude Include="..\..\src\qt\rpcconsole.h" />
+    <ClInclude Include="..\..\src\qt\sendcoinsdialog.h" />
+    <ClInclude Include="..\..\src\qt\sendcoinsentry.h" />
+    <ClInclude Include="..\..\src\qt\test\uritests.h" />
+    <ClInclude Include="..\..\src\qt\transactiondesc.h" />
+    <ClInclude Include="..\..\src\qt\transactiondescdialog.h" />
+    <ClInclude Include="..\..\src\qt\transactionfilterproxy.h" />
+    <ClInclude Include="..\..\src\qt\transactionrecord.h" />
+    <ClInclude Include="..\..\src\qt\transactiontablemodel.h" />
+    <ClInclude Include="..\..\src\qt\transactionview.h" />
+    <ClInclude Include="..\..\src\qt\walletmodel.h" />
+    <ClInclude Include="..\..\src\script.h" />
+    <ClInclude Include="..\..\src\serialize.h" />
+    <ClInclude Include="..\..\src\strlcpy.h" />
+    <ClInclude Include="..\..\src\uint256.h" />
+    <ClInclude Include="..\..\src\ui_interface.h" />
+    <ClInclude Include="..\..\src\util.h" />
+    <ClInclude Include="..\..\src\version.h" />
+    <ClInclude Include="..\..\src\wallet.h" />
+    <ClInclude Include="..\..\src\walletdb.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\src\qt\res\bitcoin-qt.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
